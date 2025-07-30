@@ -1,0 +1,110 @@
+/* WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  z-index: 1000;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.whatsapp-float:hover {
+  background-color: #128c7e;
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
+}
+
+.whatsapp-float .whatsapp-icon {
+  width: 35px;
+  height: 35px;
+  fill: currentColor;
+}
+
+/* Phone Call Floating Button */
+.phone-float {
+  position: fixed;
+  bottom: 90px; /* Position above WhatsApp button */
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  box-shadow: 0 4px 20px rgba(0, 123, 255, 0.4);
+  z-index: 1000;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.phone-float:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+  box-shadow: 0 6px 25px rgba(0, 123, 255, 0.6);
+}
+
+.phone-float .phone-icon {
+  width: 30px;
+  height: 30px;
+  fill: currentColor;
+}
+
+/* Animation for attention */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.whatsapp-float.pulse,
+.phone-float.pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .whatsapp-float {
+    width: 55px;
+    height: 55px;
+    bottom: 15px;
+    right: 15px;
+  }
+  
+  .whatsapp-float .whatsapp-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .phone-float {
+    width: 55px;
+    height: 55px;
+    bottom: 80px; /* Adjust for mobile */
+    right: 15px;
+  }
+  
+  .phone-float .phone-icon {
+    width: 25px;
+    height: 25px;
+  }
+}

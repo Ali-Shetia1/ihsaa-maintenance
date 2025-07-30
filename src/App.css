@@ -1,0 +1,39 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
+  direction: rtl;
+  line-height: 1.6;
+}
+
+/* Main Container */
+.main-container {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+/* Section Titles */
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 50px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-container {
+    width: 95%;
+  }
+  .section-title {
+    font-size: 24px;
+  }
+}

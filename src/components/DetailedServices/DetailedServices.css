@@ -1,0 +1,256 @@
+/* Detailed Services */
+.detailed-services {
+  padding: 80px 0;
+}
+
+.service-detail {
+  margin-bottom: 60px;
+}
+
+.service-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.service-image img {
+  width: 100%;
+  border-radius: 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-text {
+  padding: 30px;
+  background: #f8f9fa;
+  border-radius: 0;
+  border-right: 4px solid #007FFF;
+}
+
+.service-text h3 {
+  color: #007FFF;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.service-text ul {
+  list-style: none;
+}
+
+.service-text li {
+  padding: 8px 0;
+  color: #555;
+  position: relative;
+  padding-right: 25px;
+}
+
+.service-text li::before {
+  content: '✓';
+  position: absolute;
+  right: 0;
+  color: #007FFF;
+  font-weight: bold;
+}
+
+/* Problems Grid */
+.problems-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.problem-card {
+  background: #f8f9fa;
+  padding: 25px;
+  border-radius: 0;
+  border-right: 4px solid #007FFF;
+}
+
+.problem-card h3 {
+  color: #007FFF;
+  margin-bottom: 10px;
+}
+
+.problem-card p {
+  color: #666;
+}
+
+/* Advantages */
+.advantages {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.advantage {
+  text-align: center;
+  padding: 20px;
+}
+
+.advantage h3 {
+  color: #007FFF;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.advantage p {
+  color: #666;
+}
+
+/* Detailed Services Redesigned */
+.detailed-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.detailed-card {
+  background: #fff;
+  border-radius: 0;
+  box-shadow: 0 5px 24px rgba(0, 127, 255, 0.08), 0 1.5px 6px rgba(0,0,0,0.04);
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+}
+
+.detailed-card .section-title.small {
+  font-size: 24px;
+  margin-bottom: 24px;
+  color: #007FFF;
+  font-weight: 700;
+}
+
+.detailed-card .service-image {
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.detailed-card .service-image img {
+  width: 100%;
+  border-radius: 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.detailed-card .service-text {
+  background: #f8f9fa;
+  border-radius: 0;
+  padding: 18px 12px;
+  width: 100%;
+  margin-top: 10px;
+  border-right: 3px solid #007FFF;
+}
+
+.detailed-card .service-text h3 {
+  color: #007FFF;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.detailed-card .service-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.detailed-card .service-text li {
+  padding: 6px 0 6px 0;
+  color: #555;
+  position: relative;
+  padding-right: 22px;
+  font-size: 15px;
+}
+
+.detailed-card .service-text li::before {
+  content: '✓';
+  position: absolute;
+  right: 0;
+  color: #007FFF;
+  font-weight: bold;
+}
+
+.detailed-card .problems-grid.vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.detailed-card .problem-card {
+  background: #f8f9fa;
+  padding: 16px 12px;
+  border-radius: 0;
+  border-right: 3px solid #007FFF;
+  margin-bottom: 0;
+  box-shadow: 0 2px 8px rgba(0,127,255,0.04);
+}
+
+.detailed-card .problem-card h3 {
+  color: #007FFF;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.detailed-card .problem-card p {
+  color: #666;
+  font-size: 14px;
+}
+
+.detailed-card .advantages.vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.detailed-card .advantage {
+  background: #f8f9fa;
+  border-radius: 0;
+  padding: 16px 12px;
+  border-right: 3px solid #007FFF;
+  margin-bottom: 0;
+  box-shadow: 0 2px 8px rgba(0,127,255,0.04);
+  text-align: right;
+}
+
+.detailed-card .advantage h3 {
+  color: #007FFF;
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.detailed-card .advantage p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Service Details Toggle */
+.service-details {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.8s ease-in-out;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .detailed-services-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .problems-grid,
+  .advantages {
+    grid-template-columns: 1fr;
+  }
+}
